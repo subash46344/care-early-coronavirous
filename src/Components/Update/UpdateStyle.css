@@ -1,0 +1,103 @@
+.update_main_container {
+    width: 100%;
+    height: 500px;
+    background: #fafafa;
+    text-align: center;
+    position: relative;
+}
+
+.update_main_container h1 {
+    font-size: 42px;
+    color: #353d47;
+}
+
+.update_main_container::before {
+    position: absolute;
+    content: "";
+    left: 4%;
+    background: url('./../../Assets/case.png');
+    top: -5%;
+    width: 120px;
+    height: 121px;
+}
+
+.update_main_container_block {
+    background-image: url('./../../Assets/ever_bg.jpg');
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.update_main_container_block input {
+    text-transform: uppercase;
+    width: 75%;
+    height: 87px;
+    background: 0 0;
+    font-size: 17px;
+    font-weight: 400;
+    box-shadow: inherit;
+    padding: 0 25px;
+    border: #fff solid 1px;
+    border-radius: 50px;
+    outline: none;
+    color: #fff;
+}
+
+.update_main_container_block input::placeholder {
+    color: #fff;
+}
+
+.update_main_container_block button {
+    width: 27%;
+    height: 80px;
+    border: none;
+    font-size: 24px;
+    letter-spacing: 0.7px;
+    font-weight: 600;
+    color: #fff;
+    background: #05254d;
+    cursor: pointer;
+    margin-top: 2%;
+    transition: ease-in all .5s;
+    border-radius: 50px;
+}
+
+.update_main_container_block button:hover{
+    background-color: crimson;
+}
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    .update_main_container_block input {
+        text-transform: uppercase;
+        width: 85%;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+    .update_main_container_block button {
+        width: 40%;
+        height: auto;
+        padding: 15px 10px;
+        font-size: 16px;
+    }
+
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .update_main_container_block input {
+        text-transform: uppercase;
+        width: 90%;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+    .update_main_container_block button {
+        width: 30%;
+        height: auto;
+        padding: 15px 10px;
+        font-size: 18px;
+    }
+
+}

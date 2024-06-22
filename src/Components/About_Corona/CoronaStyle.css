@@ -1,0 +1,128 @@
+.corona_main_block {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fafafa;
+}
+
+.corona_sub_block {
+    width: 80%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.corona_sub_block_left {
+    width: 58%;
+    height: 450px;
+}
+
+.corona_sub_block_left img {
+    width: 90%;
+}
+
+.corona_sub_block_right {
+    width: 40%;
+    height: 450px;
+}
+
+.corona_sub_block_right h2{
+    font-size: 45px;
+    line-height: 55px;
+    color: #353d47;
+}
+
+.corona_sub_block_right p{
+    font-size: 18px;
+    letter-spacing: 0.3px;
+    line-height: 33px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+
+
+.corona_sub_block_right button{
+    width: 50%;
+    height: 70px;
+    background: #05254d;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    border: none;
+    cursor: pointer;
+    transition: ease-in all .5s;
+    margin-top: 50px;
+}
+
+.corona_sub_block_right button:hover{
+    background: #ec0404;
+}
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    .corona_main_block {
+        height: auto;
+        padding: 20px 10px;
+        margin: 20px 10px;
+    }
+    
+    .corona_sub_block {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .corona_sub_block_left {
+        width: 70%;
+        height: auto;
+        padding: 15px 10px;
+    }
+    
+    .corona_sub_block_left img {
+        width: 90%;
+    }
+    .corona_sub_block_right {
+        width: 80%;
+        height: auto;
+    }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .corona_main_block {
+        height: auto;
+        padding: 20px 10px;
+        margin: 20px 10px;
+    }
+    
+    .corona_sub_block {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .corona_sub_block_left {
+        width: 70%;
+        height: auto;
+        padding: 15px 10px;
+    }
+    
+    .corona_sub_block_left img {
+        width: 90%;
+    }
+    .corona_sub_block_right {
+        width: 80%;
+        height: auto;
+    }
+
+}

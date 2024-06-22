@@ -1,0 +1,129 @@
+.about_main_block {
+    width: 100%;
+    height: 620px;
+    background: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_sub_block {
+    width: 90%;
+    height: 100%;
+    background: #fff;
+    border-radius: 60px;
+    position: relative;
+    margin-top: -230px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.about_sub_block_left {
+    width: 58%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+.about_sub_block_left h1 {
+    font-size: 38px;
+    color: #353d47;
+    padding-bottom: 5px;
+}
+
+.about_sub_block_left h2 {
+    width: 13%;
+    height: 10px;
+    background: red;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.about_sub_block_left p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #282c32;
+    letter-spacing: 0.2px;
+    line-height: 32px;
+    margin-bottom: 55px;
+}
+
+.about_sub_block_left button {
+    width: 35%;
+    height: 70px;
+    background: #05254d;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    border: none;
+    cursor: pointer;
+    transition: ease-in all .5s;
+}
+
+.about_sub_block_left button:hover {
+    background: #ec0404;
+}
+
+.about_sub_block_right {
+    width: 38%;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.about_sub_block_right img {
+    width: 90%;
+
+}
+
+/* mediea query */
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    .about_main_block {
+        height: 820px;
+    }
+
+    .about_sub_block {
+        width: 95%;
+    }
+
+    .about_sub_block {
+        flex-direction: column;
+    }
+
+    .about_sub_block_left {
+        width: 100%;
+        height: 550px;
+        padding-left: 10px;
+    }
+
+    .about_sub_block_left button {
+        width: 70%;
+        height: 70px;
+    }
+
+    .about_sub_block_right {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .about_sub_block_right img {
+        width: 80%;
+    
+    }
+
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .about_sub_block_left button {
+        width: 70%;
+        height: 70px;
+        padding: 20px 0px;
+    }
+
+}

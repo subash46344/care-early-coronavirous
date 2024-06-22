@@ -1,0 +1,150 @@
+.cases_main_container {
+    width: 100%;
+    height: 900px;
+    background: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.cases_main_container_content {
+    text-align: center;
+    margin-top: 3%;
+}
+
+.cases_main_container_content h2 {
+    font-size: 40px;
+    color: #353d47;
+}
+
+.cases_main_container_content p {
+    color: #666;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+.cases_main_container_block {
+    width: 93%;
+    height: 550px;
+    margin-top: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cases_sub_container_block {
+    width: 32%;
+    height: 600px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+}
+
+.cases_sub_container_block_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px;
+    text-align: center;
+}
+
+.cases_sub_container_block_card .corona_img {
+    width: 100%;
+}
+
+.cases_sub_container_block_card h2 {
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.cases_sub_container_block_card p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.4px;
+    padding-top: 10px;
+}
+
+.corona_icon_img {
+    position: relative;
+    top: 25px;
+}
+
+.corona_btn {
+    position: relative;
+    bottom: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.corona_btn button{
+    width: 35%;
+    height: 50px;
+    border: none;
+    font-size: 17px;
+    letter-spacing: 0.4px;
+    font-weight: 500;
+    color: #fff;
+    background: #05254d;
+    cursor: pointer;
+    transition: ease-in all .4s;
+}
+
+.corona_btn button:hover{
+    background: red;
+}
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    .cases_main_container {
+        height: auto;
+    }
+    .cases_main_container_block {
+        width: 93%;
+        height: auto;
+        margin-top: 6%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin: 50px 0px;
+    }
+    .cases_sub_container_block {
+        width: 95%;
+        height: auto;
+        padding: 20px 5px;
+        margin: 20px 0px;
+       
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .cases_main_container {
+        height: auto;
+    }
+    .cases_main_container_block {
+        width: 93%;
+        height: auto;
+        margin-top: 6%;
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 50px 0px;
+    }
+    .cases_sub_container_block {
+        width: 45%;
+        height: auto;
+        padding: 20px 5px;
+        margin: 20px 0px;
+       
+    }
+    .corona_btn {
+        bottom: 630px;
+    }
+    .corona_btn button{
+        width: 50%;
+        height: 50px;
+    }
+}

@@ -1,0 +1,114 @@
+.doctors_main_container {
+    width: 100%;
+    height: 700px;
+    background: #fafafa;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.doctors_main_container h1 {
+    font-size: 42px;
+    color: #353d47;
+}
+
+.doctors_main_container::before {
+    position: absolute;
+    content: "";
+    right: 4%;
+    background: url('./../../Assets/case.png');
+    top: 34%;
+    width: 120px;
+    height: 121px;
+}
+
+.doctors_main_container_block {
+    width: 75%;
+    height: 380px;
+    margin-top: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.doctors_sub_container_block {
+    width: 49%;
+    height: 100%;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 0 30px;
+    border-radius: 8px;
+}
+
+.doctors_sub_container_block .doctor_icon {
+    width: 110px;
+    height: 115px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+    bottom: 60px;
+}
+
+.doctors_sub_container_block h3{
+    margin-top: -25px;
+}
+
+.doctors_sub_container_block p{
+    color: #504f4f;
+    letter-spacing: 0.2px;
+    line-height: 27px;
+    margin-top: 20px;
+}
+
+.do_icon{
+    margin-top: 30px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+
+    .doctors_main_container {
+        height: auto;
+        padding: 20px 0px;
+        margin: 20px 0px;
+    }
+    .doctors_main_container_block{
+        width: 95%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .doctors_sub_container_block {
+        width: 70%;
+        height: 100%;
+        padding: 20px 10px;
+        margin: 50px 0px;
+    }
+    .doctors_main_container::before {
+        display: none;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+
+    .doctors_main_container {
+        height: auto;
+        padding: 20px 0px;
+        margin: 20px 0px;
+    }
+    .doctors_main_container_block{
+        width: 95%;
+        height: auto;
+        justify-content: space-around;
+    }
+    .doctors_sub_container_block {
+        width: 45%;
+        height: 100%;
+        padding: 20px 10px;
+        margin: 50px 0px;
+    }
+    .doctors_main_container::before {
+        display: none;
+    }
+}

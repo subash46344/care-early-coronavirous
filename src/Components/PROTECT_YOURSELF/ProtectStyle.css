@@ -1,0 +1,120 @@
+.protect_main_block {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #fafafa;
+}
+
+.protect_main_block_content {
+    text-align: center;
+    padding-bottom: 4%;
+}
+
+.protect_main_block_content h2 {
+    font-size: 40px;
+    color: #353d47;
+}
+
+.protect_main_block_content p {
+    color: #666;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+}
+
+.protect_sub_block {
+    background-image: url('./../../Assets/project.png');
+    background-position: center;
+    background-size: 100% 100%;
+    width: 95%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.protect_sub_block_container {
+    width: 32%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-bottom: 35px;
+}
+
+.protect_sub_block_card {
+    width: 95%;
+    height: 300px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.protect_sub_block_card img {
+    width: 90px;
+}
+
+.protect_sub_block_card h3 {
+    font-size: 17px;
+    margin: 15px 0;
+}
+
+.protect_sub_block_card p {
+    font-size: 15px;
+    color: #081419;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    text-align: center;
+}
+
+.btn {
+    width: 50%;
+    height: 50px;
+    background: #05254d;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    border: none;
+    cursor: pointer;
+    transition: ease-in all .5s;
+    margin-top: 30px;
+}
+
+.btn:hover {
+    background: red;
+}
+
+.cursor_icon {
+    display: flex;
+    position: relative;
+    margin-top: -55px;
+}
+
+.cursor_icon i {
+    width: 90px;
+    height: 90px;
+    background: red;
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 25px;
+    color: #000000e4;
+    font-weight: 400;
+    cursor: pointer;
+    transition: ease-in all .5s;
+}
+
+.cursor_icon i:hover {
+    background: #fff;
+    color: #000000e4;
+}
