@@ -31,7 +31,7 @@
     list-style: none;
 }
 
-.navbar_list ul li a {
+.navbar_list ul li {
     font-size: 18px;
     font-weight: 400;
     color: #fff;
@@ -41,11 +41,11 @@
     transition: 0.3s ease-in-out;
 }
 
-.navbar_list ul li a:hover {
+.navbar_list ul li:hover {
     color: black;
 }
 
-.navbar_list ul li a.active {
+.navbar_list ul li.active {
     color: black;
 }
 
@@ -93,14 +93,15 @@
     }
 
     .navbar_list ul li {
-        width: 100%;
+        /* width: 100%; */
         text-align: center;
-        margin: 10px 0;
-    }
-
-    .navbar_list ul li a {
+        margin: 7px 0;
         font-size: 20px;
     }
+
+    /* .navbar_list ul li a {
+        font-size: 20px;
+    } */
 
     .menu_bar {
         display: block;
@@ -113,6 +114,10 @@
     .user_icon {
         display: none;
     }
+    .navbar_list .covid_icon {
+        display: none;
+        padding-top: 10%;
+    }
 }
 
 @media screen and (min-width: 0px) and (max-width: 600px) {
@@ -120,6 +125,10 @@
     .search_icon,
     .user_icon {
         display: none;
+    }
+    .navbar_list .covid_icon {
+        display: none;
+        padding-top: 10%;
     }
 }
 

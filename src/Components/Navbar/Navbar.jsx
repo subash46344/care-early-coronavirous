@@ -16,15 +16,15 @@ const Navbar = () => {
       </div>
       <nav className="navbar_list">
         <ul className={menuOpen ? "show" : ""}>
-          <li><a className="active" href="/">HOME</a></li>
-          <li><a href="/about">ABOUT</a></li>
-          <li><a href="/action">TAKE ACTION</a></li>
+          <li className="active" onClick={toggleMenu}>HOME</li>
+          <li onClick={toggleMenu}>ABOUT</li>
+          <li onClick={toggleMenu}>TAKE ACTION</li>
           <li>
-            <a href="/corona"><img className="covid_icon" src={Corona} alt="Corona Icon" /></a>
+          <img className="covid_icon" src={Corona} alt="Corona Icon" onClick={toggleMenu}/>
           </li>
-          <li><a href="/news">NEWS</a></li>
-          <li><a href="/doctors">DOCTORS</a></li>
-          <li><a href="/contact">CONTACT</a></li>
+          <li onClick={toggleMenu}>NEWS</li>
+          <li onClick={toggleMenu}>DOCTORS</li>
+          <li onClick={toggleMenu}>CONTACT</li>
         </ul>
         <div className="menu_bar" onClick={toggleMenu}>
           <i className={`fa ${menuOpen ? 'fa-close' : 'fa-bars'}`}></i>

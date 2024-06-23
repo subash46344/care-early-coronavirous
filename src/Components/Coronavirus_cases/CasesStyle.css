@@ -80,7 +80,7 @@
     justify-content: center;
 }
 
-.corona_btn button{
+.corona_btn button {
     width: 35%;
     height: 50px;
     border: none;
@@ -93,7 +93,7 @@
     transition: ease-in all .4s;
 }
 
-.corona_btn button:hover{
+.corona_btn button:hover {
     background: red;
 }
 
@@ -101,6 +101,7 @@
     .cases_main_container {
         height: auto;
     }
+
     .cases_main_container_block {
         width: 93%;
         height: auto;
@@ -111,18 +112,29 @@
         justify-content: center;
         margin: 50px 0px;
     }
+
+    .cases_main_container_content h2 {
+        font-size: 38px;
+    }
+
+    .cases_main_container_content p {
+        padding: 0 15px;
+    }
+
     .cases_sub_container_block {
         width: 95%;
         height: auto;
         padding: 20px 5px;
         margin: 20px 0px;
-       
+
     }
 }
+
 @media screen and (min-width: 600px) and (max-width: 900px) {
     .cases_main_container {
         height: auto;
     }
+
     .cases_main_container_block {
         width: 93%;
         height: auto;
@@ -133,17 +145,20 @@
         flex-wrap: wrap;
         margin: 50px 0px;
     }
+
     .cases_sub_container_block {
         width: 45%;
         height: auto;
         padding: 20px 5px;
         margin: 20px 0px;
-       
+
     }
+
     .corona_btn {
         bottom: 630px;
     }
-    .corona_btn button{
+
+    .corona_btn button {
         width: 50%;
         height: 50px;
     }

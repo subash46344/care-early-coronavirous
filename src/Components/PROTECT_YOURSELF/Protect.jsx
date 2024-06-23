@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./ProtectStyle.css";
 import ProIcon1 from "./../../Assets/pro1.png";
 import ProIcon2 from "./../../Assets/pro2.png";
@@ -29,6 +29,45 @@ const allCard = [
 ];
 
 const Protect = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [visibleCards, setVisibleCards] = useState(3);
+
+  const nextCard = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === allCard.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const prevCard = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? allCard.length - 1 : prevIndex - 1
+    );
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 600) {
+        setVisibleCards(1);
+      } else if (window.innerWidth < 900) {
+        setVisibleCards(2);
+      } else {
+        setVisibleCards(3);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    handleResize(); // Initial check
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const visibleCardList = [];
+  for (let i = 0; i < visibleCards; i++) {
+    const index = (currentIndex + i) % allCard.length;
+    visibleCardList.push(allCard[index]);
+  }
+
   return (
     <div className="protect_main_block">
       <div className="protect_main_block_content">
@@ -39,10 +78,10 @@ const Protect = () => {
         </p>
       </div>
       <div className="protect_sub_block">
-        <div style={{ display: "flex", width: "80%" }}>
-          {allCard.map((card) => (
-            <div className="protect_sub_block_container">
-              <div key={card.id} className="protect_sub_block_card">
+        <div className="protect_sub_block_slider">
+          {visibleCardList.map((card) => (
+            <div key={card.id} className="protect_sub_block_container">
+              <div className="protect_sub_block_card">
                 <img src={card.image} alt={card.name} />
                 <h3>{card.name}</h3>
                 <p>{card.paragraph}</p>
@@ -53,8 +92,8 @@ const Protect = () => {
         </div>
       </div>
       <div className="cursor_icon">
-        <i class="fa fa-arrow-left"></i>
-        <i class="fa fa-arrow-right"></i>
+        <i className="fa fa-arrow-left" onClick={prevCard}></i>
+        <i className="fa fa-arrow-right" onClick={nextCard}></i>
       </div>
     </div>
   );
